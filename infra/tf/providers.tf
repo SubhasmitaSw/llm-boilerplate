@@ -1,4 +1,21 @@
 terraform {
+
+  # backend "s3" {
+  #   # specify the tfsate file location
+  #   region = "lon1"               # Region of the S3 bucket
+  #   bucket = "kunal-demo"        # Name of the S3 bucket
+  #   key    = "llm-boilerplate-backend.tfstate" # Name of the tfstate file
+
+  #   # skip all the AWS related checks
+  #   skip_metadata_api_check     = true
+  #   skip_credentials_validation = true
+  #   skip_region_validation      = true
+  #   skip_s3_checksum            = true
+  #   skip_requesting_account_id  = true
+  #   use_path_style              = true
+
+  # }
+
   required_providers {
     #  User to provision resources (firewal / cluster) in civo.com
     civo = {
